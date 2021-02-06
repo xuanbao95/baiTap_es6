@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center">Thông tin nhân viên</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <form>
+            <div class="form-group">
+              <span>Mã nhân viên:</span>
+              <input
+                type="text"
+                class="form-control info"
+                placeholder="mã nhân viên"
+                id="maNV"
+              />
+            </div>
+            <div class="form-group">
+              <span>Tên nhân viên:</span>
+              <input
+                type="text"
+                class="form-control info"
+                placeholder="tên nhân viên"
+                id="tenNV"
+              />
+            </div>
+            <div class="form-group">
+              <span>Chức vụ</span>
+              <select id="chucVu">
+                <option value="Giám đốc">Giám đốc</option>
+
+                <option value="Quản lý">Quản lý</option>
+
+                <option value="Trà xanh">Trà xanh</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <span>hệ số lương:</span>
+              <input
+                type="number"
+                class="form-control"
+                placeholder="hệ số lương"
+                id="heSoLuong"
+              />
+            </div>
+            <div class="form-group">
+              <span>Lương cơ bản:</span>
+              <input
+                type="number"
+                class="form-control"
+                placeholder="lương cơ bản"
+                id="luongCoban"
+              />
+            </div>
+          </form>
+          <button class="btn btn-danger">Tính Lương</button>
+        </div>
+        <div class="col-md-6 bg-dark info2">
+          <h1 class="text-white">Thông Tin nhân viên</h1>
+          <div>
+            <span class="text-warning">Mã Nhân viên:</span>
+            <span class="text-warning infoMaNv" id="info1"></span>
+          </div>
+          <div>
+            <span class="text-warning">Tên Nhân viên:</span>
+            <span class="text-warning infoTenNv" id="info2"></span>
+          </div>
+          <div>
+            <span class="text-warning">chức vụ: </span>
+            <span class="text-warning infoChucVu" id="info3"></span>
+          </div>
+          <div>
+            <span class="text-warning">tổng lương: </span>
+            <span class="text-warning" id="tongLuong"></span>
+          </div>
+          <div class="spanStaff"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
