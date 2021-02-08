@@ -10,6 +10,9 @@ document.querySelector("button").onclick = function () {
     let LuongCoBan = document.getElementById("luongCoban").value;
     let tongLuong = heSoLuong * LuongCoBan;
 
+    document.getElementById("info1").innerHTML = staff["maNV"];
+    document.getElementById("info2").innerHTML = staff["tenNV"];
+    document.getElementById("info3").innerHTML = staff["chucVu"];
 
 
 
